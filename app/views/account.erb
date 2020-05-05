@@ -3,4 +3,8 @@
 <p>We are currently working on your account.</p>
 <h1> Welcome <%=@user.username%></h1>
 <h3>Current Balance: <%=@user.balance%></h3>
+<form action="model/update" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text">
+</form>
 <p><a href="/logout">Log Out</a></p>
